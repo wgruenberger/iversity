@@ -1,18 +1,127 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<title>Willkommen!</title>
-</head>
-<body>
-<header>
-	<h1>Willkommen!</h1>
-</header>
-<article>
-	<p>
-		Dies ist Werners erste Seite für iversity.
-	</p>
-	Bis bald!
-</article>
-</body>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="net-files" />
+    <meta name="content-language" content="de" />
+    <meta name="copyright" content="Copyright 2013 net-files GmbH" />
+    <meta name="title" content="net-files L&ouml;sungen f&uuml;r sichere Datenr&auml;ume, Online Zusammenarbeit und Datenaustausch." />
+    <meta http-equiv="expires" content="0" />
+    <script type="text/javascript" src="{% load static %}{% get_media_prefix %}scripts/tetris.js"></script>    
+    <meta name="robots" content="noindex,nofollow" />
+
+    <style type="text/css">
+      html {
+              font: 13px/140% "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, Verdana, sans-serif;
+              color: #264669;
+            }     
+      canvas {
+        border: 1px solid #000;
+        margin: 20px;
+      }
+    </style>
+    
+    <script type="text/javascript">
+
+    function draw(ctx, c, y) {
+    	ctx.clearRect(0, 0, c.width, c.height);
+    	width = 10;
+    	if (y + width <= c.height) {
+    		shapeI(ctx, c, 100, y, width, y % 4);
+    		setTimeout(function () {draw(ctx, c, y + 1)}, 30);
+    	}
+    }
+    
+    function shapeI(ctx, c, x, y, width, pos) {
+    	ctx.fillStyle = "#00aaaa";
+    	for (var i = -1; i <= 2; i += 1){
+    		if (pos % 2 == 0)
+    			ctx.fillRect(x + (i * width), y, width, width);
+    		else
+    			ctx.fillRect(x, y + (i * width), width, width);
+    		
+    	}
+    }
+    
+    function shapeSquare(ctx, c, x, y, width, pos) {
+      ctx.fillStyle = "#aa0000";
+    	ctx.fillRect(x, y, width, width);
+      ctx.fillRect(x - width, y, width, width);
+      ctx.fillRect(x, y - width, width, width);
+      ctx.fillRect(x - width, y - width, width, width);
+    }
+    
+    function shapeLeftL(ctx, c, x, y, width, pos) {
+      ctx.fillStyle = "#00aa00";
+    	if (pos == 0)
+        ctx.fillRect(x + width, y + width, width, width);
+      else if (pos == 1)
+        ctx.fillRect(x + width, y - width, width, width);
+      else if (pos == 2)
+        ctx.fillRect(x - width, y - width, width, width);
+      else if (pos == 3)
+          ctx.fillRect(x - width, y + width, width, width);
+
+    	for (var i = -1; i <= 1; i++){
+        if (pos % 2 == 0)
+        	ctx.fillRect(x + (i * width), y, width, width);
+        else
+          ctx.fillRect(x, y + (i * width), width, width);       
+      }
+    }
+    
+    function shapeRightL(ctx, c, x, y, width, pos) {
+      ctx.fillStyle = "#0000aa";
+    	if (pos == 0)
+        ctx.fillRect(x - width, y + width, width, width);
+      else if (pos == 1)
+        ctx.fillRect(x - width, y - width, width, width);
+      else if (pos == 2)
+        ctx.fillRect(x + width, y - width, width, width);
+      else if (pos == 3)
+        ctx.fillRect(x + width, y - width, width, width);
+
+      for (var i = -1; i <= 1; i++){
+        if (pos % 2 == 0)
+          ctx.fillRect(x + (i * width), y, width, width);
+        else
+          ctx.fillRect(x, y + (i * width), width, width);       
+      }  
+   }
+    
+     function shapeT(ctx, c, x, y, width, pos) {
+       ctx.fillStyle = "#aa00aa";
+       if (pos == 0)
+         ctx.fillRect(x, y + width, width, width);
+       else if (pos == 1)
+         ctx.fillRect(x - width, y, width, width);
+       else if (pos == 2)
+         ctx.fillRect(x, y - width, width, width);
+       else if (pos == 3)
+         ctx.fillRect(x + width, y, width, width);
+
+       for (var i = -1; i <= 1; i++){
+         if (pos % 2 == 0)
+           ctx.fillRect(x + (i * width), y, width, width);
+         else
+           ctx.fillRect(x, y + (i * width), width, width);       
+       }      
+    }
+    
+    </script>
+
+    <title>Werner's privates online Tetris, nicht zum öffentlichen Gebrauch!</title>
+  </head>
+
+  <body>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <canvas id="canvas1" width="200" height="400"></canvas>
+
+    <script type="text/javascript">
+    var c = document.getElementById("tetris");
+    var ctx = c.getContext("2d");
+    draw(ctx, c, 0);
+    //init();
+    </script>
+  </body>
 </html>
