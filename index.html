@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="title" content="Werners erster Tetris-Versuch" />
+    <meta name="title" content="Werner erster Tetris Versuch" />
     <meta name="robots" content="noindex,nofollow" />
 
     <style type="text/css">
@@ -21,7 +21,11 @@
     function draw(ctx, c, y) {
     	ctx.clearRect(0, 0, c.width, c.height);
     	width = 10;
-   		setTimeout(function () {draw(ctx, c, y + 1)}, 30);
+   		shapeI(ctx, c, 100, y, width, 1);
+   		if (y + 2*width < c.height)
+     		setTimeout(function () {draw(ctx, c, y + 1)}, 10);
+      else
+        ctx.is_playing = false;
     }
     
     function shapeI(ctx, c, x, y, width, pos) {
@@ -106,14 +110,24 @@
   </head>
 
   <body>
+    <h1>Hi und willkommen auf meiner Seite!</h1>
+    <p>Mal sehen, wie weit ich meinen Tetris-Klon voranbringen kann.</p>
     <canvas id="tetris" width="200" height="400"></canvas>
-    <canvas id="canvas1" width="200" height="400"></canvas>
-
+    <button onclick="start()">Restart</button>
     <script type="text/javascript">
     var c = document.getElementById("tetris");
     var ctx = c.getContext("2d");
-    draw(ctx, c, 0);
-    //init();
+    ctx.is_playing = false;
+    function start () {
+      if (ctx.is_playing)
+        return;
+      else
+      {
+        ctx.is_playing = true;
+        draw(ctx, c, 0);
+      }
+    }
+    start();
     </script>
   </body>
 </html>
