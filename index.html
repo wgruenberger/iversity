@@ -2,12 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="author" content="net-files" />
-    <meta name="content-language" content="de" />
-    <meta name="copyright" content="Copyright 2013 net-files GmbH" />
-    <meta name="title" content="net-files L&ouml;sungen f&uuml;r sichere Datenr&auml;ume, Online Zusammenarbeit und Datenaustausch." />
-    <meta http-equiv="expires" content="0" />
-    <script type="text/javascript" src="{% load static %}{% get_media_prefix %}scripts/tetris.js"></script>    
+    <meta name="title" content="Werners erster Tetris-Versuch" />
     <meta name="robots" content="noindex,nofollow" />
 
     <style type="text/css">
@@ -26,10 +21,7 @@
     function draw(ctx, c, y) {
     	ctx.clearRect(0, 0, c.width, c.height);
     	width = 10;
-    	if (y + width <= c.height) {
-    		shapeI(ctx, c, 100, y, width, y % 4);
-    		setTimeout(function () {draw(ctx, c, y + 1)}, 30);
-    	}
+   		setTimeout(function () {draw(ctx, c, y + 1)}, 30);
     }
     
     function shapeI(ctx, c, x, y, width, pos) {
