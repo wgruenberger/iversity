@@ -20,570 +20,570 @@
   </head>
   <body>
     <h1>Hi und willkommen auf meiner Seite!</h1>
-<table><thead>
-<tr>
-<td>Name</td>
-<td>Tag</td>
-<td>"empty-tag" Schreibweise erlaubt?</td>
-<td>Beschreibung</td>
-<td>Art des Tags</td>
-<td>Semantik</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>em</td>
-<td>&lt;em&gt;&lt;/em&gt;</td>
-<td></td>
-<td>emphatischer Ausdruck innerhalb eines Absatzes (z.B. überspitzte Formulierung)<br />Betonung.</td>
-<td>inline</td>
-<td>emphatischer Ausdruck innerhalb eines Absatzes (z.B. überspitzte Formulierung)</td>
-</tr>
-<tr>
-<td>pre</td>
-<td>&lt;pre&gt;&lt;/pre&gt;</td>
-<td></td>
-<td>Präformatierter Text (alle Whitespace-Zeichen werden im Browser so dargestellt wie im Text enthalten)<br />Vorformatierter Text.</td>
-<td>block</td>
-<td>Präformatierter Text (alle Whitespace-Zeichen werden im Browser so dargestellt wie im Text enthalten)</td>
-</tr>
-<tr>
-<td>code</td>
-<td>&lt;code&gt;&lt;/code&gt;</td>
-<td></td>
-<td>Quelltext-Auszug innerhalb eines Absatzes<br />Code-Fragment.</td>
-<td>inline</td>
-<td>Quelltext-Auszug innerhalb eines Absatzes</td>
-</tr>
-<tr>
-<td>dl</td>
-<td>&lt;dl&gt;&lt;/dl&gt;</td>
-<td></td>
-<td>Liste mit dt- und dd-Elementen, für Definitionslisten, Dialoge usw.<br />Definitionsliste.</td>
-<td>block</td>
-<td>Liste mit </td>
-</tr>
-<tr>
-<td>kbd</td>
-<td>&lt;kbd&gt;&lt;/kbd&gt;</td>
-<td></td>
-<td>Darstellung eines über Tastatur einzugebenden Textes im Text<br />Einzugebender Text.</td>
-<td>inline</td>
-<td>Darstellung eines über Tastatur einzugebenden Textes im Text</td>
-</tr>
-<tr>
-<td>ins</td>
-<td>&lt;ins&gt;&lt;/ins&gt;</td>
-<td></td>
-<td>Eingefügter Inhalt (Änderungsmarkierung)<br />Eingefügter Text.</td>
-<td>inline</td>
-<td>Eingefügter Inhalt (Änderungsmarkierung)</td>
-</tr>
-<tr>
-<td>meta</td>
-<td>&lt;meta /&gt;</td>
-<td class="allowed"></td>
-<td>Meta-Angabe für nicht im Inhalt sichtbare Dokumentinformationen oder für Anweisungen an den Webserver<br />Generische Metadaten.</td>
-<td>invisible</td>
-<td>Meta-Angabe für nicht im Inhalt sichtbare Dokumentinformationen oder für Anweisungen an den Webserver</td>
-</tr>
-<tr>
-<td>table</td>
-<td>&lt;table&gt;&lt;/table&gt;</td>
-<td></td>
-<td>Tabelle<br />Tabelle.</td>
-<td>block</td>
-<td>Tabellen</td>
-</tr>
-<tr>
-<td>label</td>
-<td>&lt;label&gt;&lt;/label&gt;</td>
-<td></td>
-<td>Beschriftungstext eines Formularfeldes<br />Formularbeschriftung.</td>
-<td>inline</td>
-<td>Beschriftungstext eines Formularfeldes</td>
-</tr>
-<tr>
-<td>select</td>
-<td>&lt;select&gt;&lt;/select&gt;</td>
-<td></td>
-<td>Auswahlliste in einem Formular<br />Optionsauswahl.</td>
-<td>inline</td>
-<td>Auswahlliste in einem Formular</td>
-</tr>
-<tr>
-<td>noscript</td>
-<td>&lt;noscript&gt;&lt;/noscript&gt;</td>
-<td></td>
-<td>Bereich für Inhalte, die angezeigt werden, wenn JavaScript im Browser deaktiviert oder nicht verfügbar ist<br />Fallback-Container.</td>
-<td>block</td>
-<td>Bereich für Inhalte, die angezeigt werden, wenn JavaScript im Browser deaktiviert oder nicht verfügbar ist</td>
-</tr>
-<tr>
-<td>style</td>
-<td>&lt;style&gt;&lt;/style&gt;</td>
-<td></td>
-<td>Bereich für Stylesheet-Definitionen, z.B. in CSS<br />Gestaltungsanweisungen.</td>
-<td>invisible</td>
-<td>Bereich für Stylesheet-Definitionen, z. B. in CSS</td>
-</tr>
-<tr>
-<td>span</td>
-<td>&lt;span&gt;&lt;/span&gt;</td>
-<td></td>
-<td>allgemeiner Bereich innerhalb eines Absatzes<br />Generischer Container.</td>
-<td>inline</td>
-<td>allgemeiner Bereich innerhalb eines Absatzes</td>
-</tr>
-<tr>
-<td>sub</td>
-<td>&lt;sub&gt;&lt;/sub&gt;</td>
-<td></td>
-<td>Tiefgestellter Text<br />Subskript.</td>
-<td>inline</td>
-<td>Tiefgestellter Texte</td>
-</tr>
-<tr>
-<td>img</td>
-<td>&lt;img /&gt;</td>
-<td class="allowed"></td>
-<td>Referenzierte und eingebettete Grafik<br />Bild.</td>
-<td>inline</td>
-<td>Referenzierte und eingebettete Grafik</td>
-</tr>
-<tr>
-<td>area</td>
-<td>&lt;area /&gt;</td>
-<td class="allowed"></td>
-<td>Verweis-sensitiver Bereich in einer Image-Map-Grafik<br />Clientseitige Image-Map.</td>
-<td>invisible</td>
-<td>Verweis-sensitiver Bereich in einer Image-Map-Grafik</td>
-</tr>
-<tr>
-<td>del</td>
-<td>&lt;del&gt;&lt;/del&gt;</td>
-<td></td>
-<td>gelöschter Inhalt (Änderungsmarkierung)<br />Gelöschter Text.</td>
-<td>inline</td>
-<td>gelöschter Inhalt (Änderungsmarkierung)</td>
-</tr>
-<tr>
-<td>bdo</td>
-<td>&lt;bdo&gt;&lt;/bdo&gt;</td>
-<td></td>
-<td>Richtungsänderung bei bidirektionalem Text<br />I18N: Bidi-Eingriff.</td>
-<td>inline</td>
-<td>Richtungsänderung bei bidirektionalem Text</td>
-</tr>
-<tr>
-<td>tr</td>
-<td>&lt;tr&gt;&lt;/tr&gt;</td>
-<td></td>
-<td>Tabellenzeile<br />Tabellenzeile.</td>
-<td>table</td>
-<td>Tabellenkopfzelle</td>
-</tr>
-<tr>
-<td>tbody</td>
-<td>&lt;tbody&gt;&lt;/tbody&gt;</td>
-<td></td>
-<td>Tabellenkörper mit den eigentlichen Daten<br />Tabellenkörper.</td>
-<td>table</td>
-<td>Tabellenkörper mit den eigentlichen Daten</td>
-</tr>
-<tr>
-<td>param</td>
-<td>&lt;param /&gt;</td>
-<td class="allowed"></td>
-<td>Parameter eines Objekts bei object-Element<br />Parameter.</td>
-<td>invisible</td>
-<td>Parameter eines Objekts bei </td>
-</tr>
-<tr>
-<td>li</td>
-<td>&lt;li&gt;&lt;/li&gt;</td>
-<td></td>
-<td>Listenpunkt in einer ul-, ol- oder menu-Liste<br />Listenelement.</td>
-<td>block</td>
-<td>Listenpunkt in einer </td>
-</tr>
-<tr>
-<td>dfn</td>
-<td>&lt;dfn&gt;&lt;/dfn&gt;</td>
-<td></td>
-<td>Definition innerhalb eines Absatzes<br />Instanzdefinition.</td>
-<td>inline</td>
-<td>Definition innerhalb eines Absatzes</td>
-</tr>
-<tr>
-<td>tfoot</td>
-<td>&lt;tfoot&gt;&lt;/tfoot&gt;</td>
-<td></td>
-<td>Fußbereich in einer Tabelle, z.B. für summarische Daten<br />Tabellenfuß.</td>
-<td>table</td>
-<td>Fußbereich in einer Tabelle, z.B. für summarische Daten</td>
-</tr>
-<tr>
-<td>th</td>
-<td>&lt;th&gt;&lt;/th&gt;</td>
-<td></td>
-<td>Tabellenkopfzelle<br />Tabellenkopfzelle.</td>
-<td>table</td>
-<td>Tabellenkopfzelle</td>
-</tr>
-<tr>
-<td>sup</td>
-<td>&lt;sup&gt;&lt;/sup&gt;</td>
-<td></td>
-<td>Hochgestellter Text<br />Hochgestellte Schrift.</td>
-<td>inline</td>
-<td>Hochgestellter Texte</td>
-</tr>
-<tr>
-<td>var</td>
-<td>&lt;var&gt;&lt;/var&gt;</td>
-<td></td>
-<td>Variabler Name in einem dokumentierenden Text<br />Variableninstanz.</td>
-<td>inline</td>
-<td>Variabler Name in einem dokumentierenden Text</td>
-</tr>
-<tr>
-<td>input</td>
-<td>&lt;input /&gt;</td>
-<td class="allowed"></td>
-<td>Formularelement, verwendbar für diverse Typen wie Eingabefelder, Schaltflächen, Auswahlfelder usw.<br />Eingabeelement.</td>
-<td>inline</td>
-<td>Formularelement, verwendbar für diverse Typen wie Eingabefelder, Schaltflächen, Auswahlfelder usw.</td>
-</tr>
-<tr>
-<td>td</td>
-<td>&lt;td&gt;&lt;/td&gt;</td>
-<td></td>
-<td>Tabellenzelle<br />Tabellenzelle.</td>
-<td>table</td>
-<td>Tabellenzelle</td>
-</tr>
-<tr>
-<td>samp</td>
-<td>&lt;samp&gt;&lt;/samp&gt;</td>
-<td></td>
-<td>Beispieltext in einem dokumentierenden Text<br />Beispielausgabe.</td>
-<td>inline</td>
-<td>Beispieltext in einem dokumentierenden Text</td>
-</tr>
-<tr>
-<td>cite</td>
-<td>&lt;cite&gt;&lt;/cite&gt;</td>
-<td></td>
-<td>Zitat innerhalb eines Absatzes<br />Literaturverweis.</td>
-<td>inline</td>
-<td>Zitat innerhalb eines Absatzes</td>
-</tr>
-<tr>
-<td>thead</td>
-<td>&lt;thead&gt;&lt;/thead&gt;</td>
-<td></td>
-<td>Kopfbereich einer Tabelle<br />Tabellenkopf.</td>
-<td>table</td>
-<td>Kopfbereich einer Tabelle</td>
-</tr>
-<tr>
-<td>body</td>
-<td>&lt;body&gt;&lt;/body&gt;</td>
-<td></td>
-<td>Inhaltsbereich eines HTML-Dokuments<br />Dokumentkörper.</td>
-<td>invisible</td>
-<td>Inhaltsbereich eines HTML-Dokuments</td>
-</tr>
-<tr>
-<td>map</td>
-<td>&lt;map&gt;&lt;/map&gt;</td>
-<td></td>
-<td>Bereich für verweis-sensitive Grafiken<br />Clientseitige Image-Map.</td>
-<td>inline</td>
-<td>Bereich für verweis-sensitive Grafiken</td>
-</tr>
-<tr>
-<td>head</td>
-<td>&lt;head&gt;&lt;/head&gt;</td>
-<td></td>
-<td>Kopfbereich eines HTML-Dokuments<br />Dokumentkopf.</td>
-<td>invisible</td>
-<td>Kopfbereich eines HTML-Dokuments</td>
-</tr>
-<tr>
-<td>blockquote</td>
-<td>&lt;blockquote&gt;&lt;/blockquote&gt;</td>
-<td></td>
-<td>Zitat in Form eines eigenen Textabsatzes<br />Langes Zitat.</td>
-<td>block</td>
-<td>Zitat in Form eines eigenen Textabsatzes</td>
-</tr>
-<tr>
-<td>fieldset</td>
-<td>&lt;fieldset&gt;&lt;/fieldset&gt;</td>
-<td></td>
-<td>Gruppe von Elementen in einem Formular, Reiter in einem Dialog<br />Kontrollelementgruppe.</td>
-<td>block</td>
-<td>Gruppe von Elementen in einem Formular, Reiter in einem Dialog</td>
-</tr>
-<tr>
-<td>option</td>
-<td>&lt;option&gt;&lt;/option&gt;</td>
-<td></td>
-<td>Auswahlmöglichkeit in einer Auswahlliste<br />Auswahlmöglichkeit.</td>
-<td>inline</td>
-<td>Auswahlmöglichkeit in einer Auswahlliste</td>
-</tr>
-<tr>
-<td>form</td>
-<td>&lt;form&gt;&lt;/form&gt;</td>
-<td></td>
-<td>Formular, Dialog<br />Formular.</td>
-<td>block</td>
-<td>Formular, Dialog</td>
-</tr>
-<tr>
-<td>hr</td>
-<td>&lt;hr /&gt;</td>
-<td class="allowed"></td>
-<td>Trennlinie<br />Horizontaler Trenner.</td>
-<td>block</td>
-<td>Trennlinie</td>
-</tr>
-<tr>
-<td>dd</td>
-<td>&lt;dd&gt;&lt;/dd&gt;</td>
-<td></td>
-<td>Definition, Beschreibung, detaillierter Inhalt zu einem dt-Element<br />Definitionsbeschreibung.</td>
-<td>block</td>
-<td>Definition, Beschreibung, detaillierter Inhalt zu einem </td>
-</tr>
-<tr>
-<td>object</td>
-<td>&lt;object&gt;&lt;/object&gt;</td>
-<td></td>
-<td>Eingebettetes Objekt, geeignet für spezielle Multimedia-Objekte, Java-Applets usw.<br />Generisches Objekt.</td>
-<td>inline</td>
-<td>Eingebettetes Objekt, geeignet für spezielle Multimedia-Objekte, Java-Applets usw.</td>
-</tr>
-<tr>
-<td>base</td>
-<td>&lt;base /&gt;</td>
-<td class="allowed"></td>
-<td>Basis-URL für Referenzen<br />Basis-URI.</td>
-<td>invisible</td>
-<td>Basis-URL für Referenzen</td>
-</tr>
-<tr>
-<td>link</td>
-<td>&lt;link /&gt;</td>
-<td class="allowed"></td>
-<td>Logische Beziehungen der aktuellen Webseite zu anderen Webseiten<br />Medienunabhängiger Link.</td>
-<td>invisible</td>
-<td>Logische Beziehungen der aktuellen Webseite zu anderen Webseiten</td>
-</tr>
-<tr>
-<td>abbr</td>
-<td>&lt;abbr&gt;&lt;/abbr&gt;</td>
-<td></td>
-<td>Abkürzung<br />Abkürzung.</td>
-<td>inline</td>
-<td>Abkürzung</td>
-</tr>
-<tr>
-<td>br</td>
-<td>&lt;br /&gt;</td>
-<td class="allowed"></td>
-<td>Erzwungener Zeilenumbruch an der betreffenden Stelle<br />Zeilenumbruch.</td>
-<td>inline</td>
-<td>Erzwungener Zeilenumbruch an der betreffenden Stelle</td>
-</tr>
-<tr>
-<td>address</td>
-<td>&lt;address&gt;&lt;/address&gt;</td>
-<td></td>
-<td>Kontaktangabe zum Autor eines Inhalts (Credits)<br />Autoreninformation.</td>
-<td>block</td>
-<td>Kontaktangabe zum Autor eines Inhalts (Credits)</td>
-</tr>
-<tr>
-<td>optgroup</td>
-<td>&lt;optgroup&gt;&lt;/optgroup&gt;</td>
-<td></td>
-<td>Gruppe von Auswahlmöglichkeiten in einer Auswahlliste<br />Optionsgruppe.</td>
-<td>invisible</td>
-<td>Gruppe von Auswahlmöglichkeiten in einer Auswahlliste</td>
-</tr>
-<tr>
-<td>h1 - h6</td>
-<td>&lt;h1 - h6&gt;&lt;/h1 - h6&gt;</td>
-<td></td>
-<td>Überschrift 1. - 6. Ordnung<br />Überschrift.</td>
-<td>undefined</td>
-<td>Überschrift 1. bis 6. Ordnung</td>
-</tr>
-<tr>
-<td>dt</td>
-<td>&lt;dt&gt;&lt;/dt&gt;</td>
-<td></td>
-<td>Zu definierender Ausdruck in einer Definitionsliste, Sprechername in einem Dialog usw.<br />Definitionsbegriff.</td>
-<td>block</td>
-<td>Zu definierender Ausdruck in einer Definitionsliste, Sprechername in einem Dialog usw.</td>
-</tr>
-<tr>
-<td>strong</td>
-<td>&lt;strong&gt;&lt;/strong&gt;</td>
-<td></td>
-<td>stark betonter Inhalt im Text<br />Starke Betonung (HTML 5: Wichtigkeit).</td>
-<td>inline</td>
-<td>stark betonter Inhalt im Text</td>
-</tr>
-<tr>
-<td>b</td>
-<td>&lt;b&gt;&lt;/b&gt;</td>
-<td></td>
-<td>Stilistische Hervorhebung im Text (üblicherweise fett dargestellt)<br />Fettschrift.</td>
-<td>inline</td>
-<td>Stilistische Hervorhebung im Text (üblicherweise fett dargestellt)</td>
-</tr>
-<tr>
-<td>legend</td>
-<td>&lt;legend&gt;&lt;/legend&gt;</td>
-<td></td>
-<td>Überschrift für eine fieldset-Gruppe von Elementen in einem Formular<br />Beschriftung.</td>
-<td>block</td>
-<td>Überschrift für eine </td>
-</tr>
-<tr>
-<td>a</td>
-<td>&lt;a&gt;&lt;/a&gt;</td>
-<td></td>
-<td>Verweis (Hyperlink) und Anker für Verweise<br />Anker.</td>
-<td>inline</td>
-<td>Verweis (Hyperlink) und Anker für Verweise</td>
-</tr>
-<tr>
-<td>ol</td>
-<td>&lt;ol&gt;&lt;/ol&gt;</td>
-<td></td>
-<td>Geordnete (z.B. nummerierte) Liste<br />Geordnete Liste.</td>
-<td>block</td>
-<td>Geordnete (z.B. nummerierte) Liste</td>
-</tr>
-<tr>
-<td>textarea</td>
-<td>&lt;textarea&gt;&lt;/textarea&gt;</td>
-<td></td>
-<td>Mehrzeiliger Eingabebereich in einem Formular<br />Mehrzeiliges Textfeld.</td>
-<td>inline</td>
-<td>Mehrzeiliger Eingabebereich in einem Formular</td>
-</tr>
-<tr>
-<td>colgroup</td>
-<td>&lt;colgroup&gt;&lt;/colgroup&gt;</td>
-<td></td>
-<td>Gruppe von Tabellenspalten<br />Spaltengruppe.</td>
-<td>table</td>
-<td>Gruppe von Tabellenspalten</td>
-</tr>
-<tr>
-<td>i</td>
-<td>&lt;i&gt;&lt;/i&gt;</td>
-<td></td>
-<td>spezieller Ausdruck im Text, z.B. Fachterminus oder Idiom (üblicherweise kursiv dargestellt)<br />Kursivschrift.</td>
-<td>inline</td>
-<td>spezieller Ausdruck im Text, z.B. Fachterminus oder Idiom (üblicherweise kursiv dargestellt)</td>
-</tr>
-<tr>
-<td>button</td>
-<td>&lt;button&gt;&lt;/button&gt;</td>
-<td></td>
-<td>Schaltfläche in einem Formular<br />Button.</td>
-<td>inline</td>
-<td>Schaltfläche in einem Formular</td>
-</tr>
-<tr>
-<td>script</td>
-<td>&lt;script&gt;&lt;/script&gt;</td>
-<td></td>
-<td>Scriptbereich für JavaScript und andere Scriptsprachen<br />Script-Anweisungen.</td>
-<td>inline</td>
-<td>Scriptbereich für JavaScript und andere Scriptsprachen</td>
-</tr>
-<tr>
-<td>html</td>
-<td>&lt;html&gt;&lt;/html&gt;</td>
-<td></td>
-<td>Dokumentelement von HTML-Dokumenten, schließt das gesamte Dokument ein<br />Dokument-Root.</td>
-<td>invisible</td>
-<td>Dokumentelement von HTML-Dokumenten, schließt das gesamte Dokument ein</td>
-</tr>
-<tr>
-<td>q</td>
-<td>&lt;q&gt;&lt;/q&gt;</td>
-<td></td>
-<td>Wörtliche Rede in einem Text<br />Inline-Zitat.</td>
-<td>inline</td>
-<td>Wörtliche Rede in einem Text</td>
-</tr>
-<tr>
-<td>p</td>
-<td>&lt;p&gt;&lt;/p&gt;</td>
-<td></td>
-<td>Textabsatz<br />Absatz.</td>
-<td>block</td>
-<td>Textabsatz</td>
-</tr>
-<tr>
-<td>caption</td>
-<td>&lt;caption&gt;&lt;/caption&gt;</td>
-<td></td>
-<td>Tabellenüberschrift / -unterschrift<br />(Tabellen-) Kopfzeile.</td>
-<td>table</td>
-<td>Tabellenüberschrift / -unterschrift</td>
-</tr>
-<tr>
-<td>small</td>
-<td>&lt;small&gt;&lt;/small&gt;</td>
-<td></td>
-<td>kleiner dargestellter Text als Normalschrift<br />Kleinschrift (HTML 5: Kleingedrucktes).</td>
-<td>inline</td>
-<td>kleiner dargestellter Text als Normalschrift</td>
-</tr>
-<tr>
-<td>title</td>
-<td>&lt;title&gt;&lt;/title&gt;</td>
-<td></td>
-<td>Titel eines HTML-Dokuments<br />Dokumenttitel.</td>
-<td>invisible</td>
-<td>Titel eines HTML-Dokuments</td>
-</tr>
-<tr>
-<td>div</td>
-<td>&lt;div&gt;&lt;/div&gt;</td>
-<td></td>
-<td>Allgemeiner Bereich<br />Generischer Container.</td>
-<td>block</td>
-<td>Allgemeiner Bereich</td>
-</tr>
-<tr>
-<td>col</td>
-<td>&lt;col /&gt;</td>
-<td class="allowed"></td>
-<td>Tabellenspalte<br />Spalte.</td>
-<td>table</td>
-<td>Tabellenspalte</td>
-</tr>
-<tr>
-<td>ul</td>
-<td>&lt;ul&gt;&lt;/ul&gt;</td>
-<td></td>
-<td>Unsortierte Liste (Aufzählungsliste)<br />Ungeordnete Liste.</td>
-<td>block</td>
-<td>Unsortierte Liste (Aufzählungsliste)</td>
-</tr>
-</tbody>
-</table>
-  </body>
+	<table><thead>
+	<tr>
+	<td>Name</td>
+	<td>Tag</td>
+	<td>"empty-tag" Schreibweise erlaubt?</td>
+	<td>Beschreibung</td>
+	<td>Art des Tags</td>
+	<td>Semantik</td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td>em</td>
+	<td>&lt;em&gt;&lt;/em&gt;</td>
+	<td></td>
+	<td>emphatischer Ausdruck innerhalb eines Absatzes (z.B. überspitzte Formulierung)<br />Betonung.</td>
+	<td>inline</td>
+	<td>emphatischer Ausdruck innerhalb eines Absatzes (z.B. überspitzte Formulierung)</td>
+	</tr>
+	<tr>
+	<td>pre</td>
+	<td>&lt;pre&gt;&lt;/pre&gt;</td>
+	<td></td>
+	<td>Präformatierter Text (alle Whitespace-Zeichen werden im Browser so dargestellt wie im Text enthalten)<br />Vorformatierter Text.</td>
+	<td>block</td>
+	<td>Präformatierter Text (alle Whitespace-Zeichen werden im Browser so dargestellt wie im Text enthalten)</td>
+	</tr>
+	<tr>
+	<td>code</td>
+	<td>&lt;code&gt;&lt;/code&gt;</td>
+	<td></td>
+	<td>Quelltext-Auszug innerhalb eines Absatzes<br />Code-Fragment.</td>
+	<td>inline</td>
+	<td>Quelltext-Auszug innerhalb eines Absatzes</td>
+	</tr>
+	<tr>
+	<td>dl</td>
+	<td>&lt;dl&gt;&lt;/dl&gt;</td>
+	<td></td>
+	<td>Liste mit dt- und dd-Elementen, für Definitionslisten, Dialoge usw.<br />Definitionsliste.</td>
+	<td>block</td>
+	<td>Liste mit </td>
+	</tr>
+	<tr>
+	<td>kbd</td>
+	<td>&lt;kbd&gt;&lt;/kbd&gt;</td>
+	<td></td>
+	<td>Darstellung eines über Tastatur einzugebenden Textes im Text<br />Einzugebender Text.</td>
+	<td>inline</td>
+	<td>Darstellung eines über Tastatur einzugebenden Textes im Text</td>
+	</tr>
+	<tr>
+	<td>ins</td>
+	<td>&lt;ins&gt;&lt;/ins&gt;</td>
+	<td></td>
+	<td>Eingefügter Inhalt (Änderungsmarkierung)<br />Eingefügter Text.</td>
+	<td>inline</td>
+	<td>Eingefügter Inhalt (Änderungsmarkierung)</td>
+	</tr>
+	<tr>
+	<td>meta</td>
+	<td>&lt;meta /&gt;</td>
+	<td class="allowed"></td>
+	<td>Meta-Angabe für nicht im Inhalt sichtbare Dokumentinformationen oder für Anweisungen an den Webserver<br />Generische Metadaten.</td>
+	<td>invisible</td>
+	<td>Meta-Angabe für nicht im Inhalt sichtbare Dokumentinformationen oder für Anweisungen an den Webserver</td>
+	</tr>
+	<tr>
+	<td>table</td>
+	<td>&lt;table&gt;&lt;/table&gt;</td>
+	<td></td>
+	<td>Tabelle<br />Tabelle.</td>
+	<td>block</td>
+	<td>Tabellen</td>
+	</tr>
+	<tr>
+	<td>label</td>
+	<td>&lt;label&gt;&lt;/label&gt;</td>
+	<td></td>
+	<td>Beschriftungstext eines Formularfeldes<br />Formularbeschriftung.</td>
+	<td>inline</td>
+	<td>Beschriftungstext eines Formularfeldes</td>
+	</tr>
+	<tr>
+	<td>select</td>
+	<td>&lt;select&gt;&lt;/select&gt;</td>
+	<td></td>
+	<td>Auswahlliste in einem Formular<br />Optionsauswahl.</td>
+	<td>inline</td>
+	<td>Auswahlliste in einem Formular</td>
+	</tr>
+	<tr>
+	<td>noscript</td>
+	<td>&lt;noscript&gt;&lt;/noscript&gt;</td>
+	<td></td>
+	<td>Bereich für Inhalte, die angezeigt werden, wenn JavaScript im Browser deaktiviert oder nicht verfügbar ist<br />Fallback-Container.</td>
+	<td>block</td>
+	<td>Bereich für Inhalte, die angezeigt werden, wenn JavaScript im Browser deaktiviert oder nicht verfügbar ist</td>
+	</tr>
+	<tr>
+	<td>style</td>
+	<td>&lt;style&gt;&lt;/style&gt;</td>
+	<td></td>
+	<td>Bereich für Stylesheet-Definitionen, z.B. in CSS<br />Gestaltungsanweisungen.</td>
+	<td>invisible</td>
+	<td>Bereich für Stylesheet-Definitionen, z. B. in CSS</td>
+	</tr>
+	<tr>
+	<td>span</td>
+	<td>&lt;span&gt;&lt;/span&gt;</td>
+	<td></td>
+	<td>allgemeiner Bereich innerhalb eines Absatzes<br />Generischer Container.</td>
+	<td>inline</td>
+	<td>allgemeiner Bereich innerhalb eines Absatzes</td>
+	</tr>
+	<tr>
+	<td>sub</td>
+	<td>&lt;sub&gt;&lt;/sub&gt;</td>
+	<td></td>
+	<td>Tiefgestellter Text<br />Subskript.</td>
+	<td>inline</td>
+	<td>Tiefgestellter Texte</td>
+	</tr>
+	<tr>
+	<td>img</td>
+	<td>&lt;img /&gt;</td>
+	<td class="allowed"></td>
+	<td>Referenzierte und eingebettete Grafik<br />Bild.</td>
+	<td>inline</td>
+	<td>Referenzierte und eingebettete Grafik</td>
+	</tr>
+	<tr>
+	<td>area</td>
+	<td>&lt;area /&gt;</td>
+	<td class="allowed"></td>
+	<td>Verweis-sensitiver Bereich in einer Image-Map-Grafik<br />Clientseitige Image-Map.</td>
+	<td>invisible</td>
+	<td>Verweis-sensitiver Bereich in einer Image-Map-Grafik</td>
+	</tr>
+	<tr>
+	<td>del</td>
+	<td>&lt;del&gt;&lt;/del&gt;</td>
+	<td></td>
+	<td>gelöschter Inhalt (Änderungsmarkierung)<br />Gelöschter Text.</td>
+	<td>inline</td>
+	<td>gelöschter Inhalt (Änderungsmarkierung)</td>
+	</tr>
+	<tr>
+	<td>bdo</td>
+	<td>&lt;bdo&gt;&lt;/bdo&gt;</td>
+	<td></td>
+	<td>Richtungsänderung bei bidirektionalem Text<br />I18N: Bidi-Eingriff.</td>
+	<td>inline</td>
+	<td>Richtungsänderung bei bidirektionalem Text</td>
+	</tr>
+	<tr>
+	<td>tr</td>
+	<td>&lt;tr&gt;&lt;/tr&gt;</td>
+	<td></td>
+	<td>Tabellenzeile<br />Tabellenzeile.</td>
+	<td>table</td>
+	<td>Tabellenkopfzelle</td>
+	</tr>
+	<tr>
+	<td>tbody</td>
+	<td>&lt;tbody&gt;&lt;/tbody&gt;</td>
+	<td></td>
+	<td>Tabellenkörper mit den eigentlichen Daten<br />Tabellenkörper.</td>
+	<td>table</td>
+	<td>Tabellenkörper mit den eigentlichen Daten</td>
+	</tr>
+	<tr>
+	<td>param</td>
+	<td>&lt;param /&gt;</td>
+	<td class="allowed"></td>
+	<td>Parameter eines Objekts bei object-Element<br />Parameter.</td>
+	<td>invisible</td>
+	<td>Parameter eines Objekts bei </td>
+	</tr>
+	<tr>
+	<td>li</td>
+	<td>&lt;li&gt;&lt;/li&gt;</td>
+	<td></td>
+	<td>Listenpunkt in einer ul-, ol- oder menu-Liste<br />Listenelement.</td>
+	<td>block</td>
+	<td>Listenpunkt in einer </td>
+	</tr>
+	<tr>
+	<td>dfn</td>
+	<td>&lt;dfn&gt;&lt;/dfn&gt;</td>
+	<td></td>
+	<td>Definition innerhalb eines Absatzes<br />Instanzdefinition.</td>
+	<td>inline</td>
+	<td>Definition innerhalb eines Absatzes</td>
+	</tr>
+	<tr>
+	<td>tfoot</td>
+	<td>&lt;tfoot&gt;&lt;/tfoot&gt;</td>
+	<td></td>
+	<td>Fußbereich in einer Tabelle, z.B. für summarische Daten<br />Tabellenfuß.</td>
+	<td>table</td>
+	<td>Fußbereich in einer Tabelle, z.B. für summarische Daten</td>
+	</tr>
+	<tr>
+	<td>th</td>
+	<td>&lt;th&gt;&lt;/th&gt;</td>
+	<td></td>
+	<td>Tabellenkopfzelle<br />Tabellenkopfzelle.</td>
+	<td>table</td>
+	<td>Tabellenkopfzelle</td>
+	</tr>
+	<tr>
+	<td>sup</td>
+	<td>&lt;sup&gt;&lt;/sup&gt;</td>
+	<td></td>
+	<td>Hochgestellter Text<br />Hochgestellte Schrift.</td>
+	<td>inline</td>
+	<td>Hochgestellter Texte</td>
+	</tr>
+	<tr>
+	<td>var</td>
+	<td>&lt;var&gt;&lt;/var&gt;</td>
+	<td></td>
+	<td>Variabler Name in einem dokumentierenden Text<br />Variableninstanz.</td>
+	<td>inline</td>
+	<td>Variabler Name in einem dokumentierenden Text</td>
+	</tr>
+	<tr>
+	<td>input</td>
+	<td>&lt;input /&gt;</td>
+	<td class="allowed"></td>
+	<td>Formularelement, verwendbar für diverse Typen wie Eingabefelder, Schaltflächen, Auswahlfelder usw.<br />Eingabeelement.</td>
+	<td>inline</td>
+	<td>Formularelement, verwendbar für diverse Typen wie Eingabefelder, Schaltflächen, Auswahlfelder usw.</td>
+	</tr>
+	<tr>
+	<td>td</td>
+	<td>&lt;td&gt;&lt;/td&gt;</td>
+	<td></td>
+	<td>Tabellenzelle<br />Tabellenzelle.</td>
+	<td>table</td>
+	<td>Tabellenzelle</td>
+	</tr>
+	<tr>
+	<td>samp</td>
+	<td>&lt;samp&gt;&lt;/samp&gt;</td>
+	<td></td>
+	<td>Beispieltext in einem dokumentierenden Text<br />Beispielausgabe.</td>
+	<td>inline</td>
+	<td>Beispieltext in einem dokumentierenden Text</td>
+	</tr>
+	<tr>
+	<td>cite</td>
+	<td>&lt;cite&gt;&lt;/cite&gt;</td>
+	<td></td>
+	<td>Zitat innerhalb eines Absatzes<br />Literaturverweis.</td>
+	<td>inline</td>
+	<td>Zitat innerhalb eines Absatzes</td>
+	</tr>
+	<tr>
+	<td>thead</td>
+	<td>&lt;thead&gt;&lt;/thead&gt;</td>
+	<td></td>
+	<td>Kopfbereich einer Tabelle<br />Tabellenkopf.</td>
+	<td>table</td>
+	<td>Kopfbereich einer Tabelle</td>
+	</tr>
+	<tr>
+	<td>body</td>
+	<td>&lt;body&gt;&lt;/body&gt;</td>
+	<td></td>
+	<td>Inhaltsbereich eines HTML-Dokuments<br />Dokumentkörper.</td>
+	<td>invisible</td>
+	<td>Inhaltsbereich eines HTML-Dokuments</td>
+	</tr>
+	<tr>
+	<td>map</td>
+	<td>&lt;map&gt;&lt;/map&gt;</td>
+	<td></td>
+	<td>Bereich für verweis-sensitive Grafiken<br />Clientseitige Image-Map.</td>
+	<td>inline</td>
+	<td>Bereich für verweis-sensitive Grafiken</td>
+	</tr>
+	<tr>
+	<td>head</td>
+	<td>&lt;head&gt;&lt;/head&gt;</td>
+	<td></td>
+	<td>Kopfbereich eines HTML-Dokuments<br />Dokumentkopf.</td>
+	<td>invisible</td>
+	<td>Kopfbereich eines HTML-Dokuments</td>
+	</tr>
+	<tr>
+	<td>blockquote</td>
+	<td>&lt;blockquote&gt;&lt;/blockquote&gt;</td>
+	<td></td>
+	<td>Zitat in Form eines eigenen Textabsatzes<br />Langes Zitat.</td>
+	<td>block</td>
+	<td>Zitat in Form eines eigenen Textabsatzes</td>
+	</tr>
+	<tr>
+	<td>fieldset</td>
+	<td>&lt;fieldset&gt;&lt;/fieldset&gt;</td>
+	<td></td>
+	<td>Gruppe von Elementen in einem Formular, Reiter in einem Dialog<br />Kontrollelementgruppe.</td>
+	<td>block</td>
+	<td>Gruppe von Elementen in einem Formular, Reiter in einem Dialog</td>
+	</tr>
+	<tr>
+	<td>option</td>
+	<td>&lt;option&gt;&lt;/option&gt;</td>
+	<td></td>
+	<td>Auswahlmöglichkeit in einer Auswahlliste<br />Auswahlmöglichkeit.</td>
+	<td>inline</td>
+	<td>Auswahlmöglichkeit in einer Auswahlliste</td>
+	</tr>
+	<tr>
+	<td>form</td>
+	<td>&lt;form&gt;&lt;/form&gt;</td>
+	<td></td>
+	<td>Formular, Dialog<br />Formular.</td>
+	<td>block</td>
+	<td>Formular, Dialog</td>
+	</tr>
+	<tr>
+	<td>hr</td>
+	<td>&lt;hr /&gt;</td>
+	<td class="allowed"></td>
+	<td>Trennlinie<br />Horizontaler Trenner.</td>
+	<td>block</td>
+	<td>Trennlinie</td>
+	</tr>
+	<tr>
+	<td>dd</td>
+	<td>&lt;dd&gt;&lt;/dd&gt;</td>
+	<td></td>
+	<td>Definition, Beschreibung, detaillierter Inhalt zu einem dt-Element<br />Definitionsbeschreibung.</td>
+	<td>block</td>
+	<td>Definition, Beschreibung, detaillierter Inhalt zu einem </td>
+	</tr>
+	<tr>
+	<td>object</td>
+	<td>&lt;object&gt;&lt;/object&gt;</td>
+	<td></td>
+	<td>Eingebettetes Objekt, geeignet für spezielle Multimedia-Objekte, Java-Applets usw.<br />Generisches Objekt.</td>
+	<td>inline</td>
+	<td>Eingebettetes Objekt, geeignet für spezielle Multimedia-Objekte, Java-Applets usw.</td>
+	</tr>
+	<tr>
+	<td>base</td>
+	<td>&lt;base /&gt;</td>
+	<td class="allowed"></td>
+	<td>Basis-URL für Referenzen<br />Basis-URI.</td>
+	<td>invisible</td>
+	<td>Basis-URL für Referenzen</td>
+	</tr>
+	<tr>
+	<td>link</td>
+	<td>&lt;link /&gt;</td>
+	<td class="allowed"></td>
+	<td>Logische Beziehungen der aktuellen Webseite zu anderen Webseiten<br />Medienunabhängiger Link.</td>
+	<td>invisible</td>
+	<td>Logische Beziehungen der aktuellen Webseite zu anderen Webseiten</td>
+	</tr>
+	<tr>
+	<td>abbr</td>
+	<td>&lt;abbr&gt;&lt;/abbr&gt;</td>
+	<td></td>
+	<td>Abkürzung<br />Abkürzung.</td>
+	<td>inline</td>
+	<td>Abkürzung</td>
+	</tr>
+	<tr>
+	<td>br</td>
+	<td>&lt;br /&gt;</td>
+	<td class="allowed"></td>
+	<td>Erzwungener Zeilenumbruch an der betreffenden Stelle<br />Zeilenumbruch.</td>
+	<td>inline</td>
+	<td>Erzwungener Zeilenumbruch an der betreffenden Stelle</td>
+	</tr>
+	<tr>
+	<td>address</td>
+	<td>&lt;address&gt;&lt;/address&gt;</td>
+	<td></td>
+	<td>Kontaktangabe zum Autor eines Inhalts (Credits)<br />Autoreninformation.</td>
+	<td>block</td>
+	<td>Kontaktangabe zum Autor eines Inhalts (Credits)</td>
+	</tr>
+	<tr>
+	<td>optgroup</td>
+	<td>&lt;optgroup&gt;&lt;/optgroup&gt;</td>
+	<td></td>
+	<td>Gruppe von Auswahlmöglichkeiten in einer Auswahlliste<br />Optionsgruppe.</td>
+	<td>invisible</td>
+	<td>Gruppe von Auswahlmöglichkeiten in einer Auswahlliste</td>
+	</tr>
+	<tr>
+	<td>h1 - h6</td>
+	<td>&lt;h1 - h6&gt;&lt;/h1 - h6&gt;</td>
+	<td></td>
+	<td>Überschrift 1. - 6. Ordnung<br />Überschrift.</td>
+	<td>undefined</td>
+	<td>Überschrift 1. bis 6. Ordnung</td>
+	</tr>
+	<tr>
+	<td>dt</td>
+	<td>&lt;dt&gt;&lt;/dt&gt;</td>
+	<td></td>
+	<td>Zu definierender Ausdruck in einer Definitionsliste, Sprechername in einem Dialog usw.<br />Definitionsbegriff.</td>
+	<td>block</td>
+	<td>Zu definierender Ausdruck in einer Definitionsliste, Sprechername in einem Dialog usw.</td>
+	</tr>
+	<tr>
+	<td>strong</td>
+	<td>&lt;strong&gt;&lt;/strong&gt;</td>
+	<td></td>
+	<td>stark betonter Inhalt im Text<br />Starke Betonung (HTML 5: Wichtigkeit).</td>
+	<td>inline</td>
+	<td>stark betonter Inhalt im Text</td>
+	</tr>
+	<tr>
+	<td>b</td>
+	<td>&lt;b&gt;&lt;/b&gt;</td>
+	<td></td>
+	<td>Stilistische Hervorhebung im Text (üblicherweise fett dargestellt)<br />Fettschrift.</td>
+	<td>inline</td>
+	<td>Stilistische Hervorhebung im Text (üblicherweise fett dargestellt)</td>
+	</tr>
+	<tr>
+	<td>legend</td>
+	<td>&lt;legend&gt;&lt;/legend&gt;</td>
+	<td></td>
+	<td>Überschrift für eine fieldset-Gruppe von Elementen in einem Formular<br />Beschriftung.</td>
+	<td>block</td>
+	<td>Überschrift für eine </td>
+	</tr>
+	<tr>
+	<td>a</td>
+	<td>&lt;a&gt;&lt;/a&gt;</td>
+	<td></td>
+	<td>Verweis (Hyperlink) und Anker für Verweise<br />Anker.</td>
+	<td>inline</td>
+	<td>Verweis (Hyperlink) und Anker für Verweise</td>
+	</tr>
+	<tr>
+	<td>ol</td>
+	<td>&lt;ol&gt;&lt;/ol&gt;</td>
+	<td></td>
+	<td>Geordnete (z.B. nummerierte) Liste<br />Geordnete Liste.</td>
+	<td>block</td>
+	<td>Geordnete (z.B. nummerierte) Liste</td>
+	</tr>
+	<tr>
+	<td>textarea</td>
+	<td>&lt;textarea&gt;&lt;/textarea&gt;</td>
+	<td></td>
+	<td>Mehrzeiliger Eingabebereich in einem Formular<br />Mehrzeiliges Textfeld.</td>
+	<td>inline</td>
+	<td>Mehrzeiliger Eingabebereich in einem Formular</td>
+	</tr>
+	<tr>
+	<td>colgroup</td>
+	<td>&lt;colgroup&gt;&lt;/colgroup&gt;</td>
+	<td></td>
+	<td>Gruppe von Tabellenspalten<br />Spaltengruppe.</td>
+	<td>table</td>
+	<td>Gruppe von Tabellenspalten</td>
+	</tr>
+	<tr>
+	<td>i</td>
+	<td>&lt;i&gt;&lt;/i&gt;</td>
+	<td></td>
+	<td>spezieller Ausdruck im Text, z.B. Fachterminus oder Idiom (üblicherweise kursiv dargestellt)<br />Kursivschrift.</td>
+	<td>inline</td>
+	<td>spezieller Ausdruck im Text, z.B. Fachterminus oder Idiom (üblicherweise kursiv dargestellt)</td>
+	</tr>
+	<tr>
+	<td>button</td>
+	<td>&lt;button&gt;&lt;/button&gt;</td>
+	<td></td>
+	<td>Schaltfläche in einem Formular<br />Button.</td>
+	<td>inline</td>
+	<td>Schaltfläche in einem Formular</td>
+	</tr>
+	<tr>
+	<td>script</td>
+	<td>&lt;script&gt;&lt;/script&gt;</td>
+	<td></td>
+	<td>Scriptbereich für JavaScript und andere Scriptsprachen<br />Script-Anweisungen.</td>
+	<td>inline</td>
+	<td>Scriptbereich für JavaScript und andere Scriptsprachen</td>
+	</tr>
+	<tr>
+	<td>html</td>
+	<td>&lt;html&gt;&lt;/html&gt;</td>
+	<td></td>
+	<td>Dokumentelement von HTML-Dokumenten, schließt das gesamte Dokument ein<br />Dokument-Root.</td>
+	<td>invisible</td>
+	<td>Dokumentelement von HTML-Dokumenten, schließt das gesamte Dokument ein</td>
+	</tr>
+	<tr>
+	<td>q</td>
+	<td>&lt;q&gt;&lt;/q&gt;</td>
+	<td></td>
+	<td>Wörtliche Rede in einem Text<br />Inline-Zitat.</td>
+	<td>inline</td>
+	<td>Wörtliche Rede in einem Text</td>
+	</tr>
+	<tr>
+	<td>p</td>
+	<td>&lt;p&gt;&lt;/p&gt;</td>
+	<td></td>
+	<td>Textabsatz<br />Absatz.</td>
+	<td>block</td>
+	<td>Textabsatz</td>
+	</tr>
+	<tr>
+	<td>caption</td>
+	<td>&lt;caption&gt;&lt;/caption&gt;</td>
+	<td></td>
+	<td>Tabellenüberschrift / -unterschrift<br />(Tabellen-) Kopfzeile.</td>
+	<td>table</td>
+	<td>Tabellenüberschrift / -unterschrift</td>
+	</tr>
+	<tr>
+	<td>small</td>
+	<td>&lt;small&gt;&lt;/small&gt;</td>
+	<td></td>
+	<td>kleiner dargestellter Text als Normalschrift<br />Kleinschrift (HTML 5: Kleingedrucktes).</td>
+	<td>inline</td>
+	<td>kleiner dargestellter Text als Normalschrift</td>
+	</tr>
+	<tr>
+	<td>title</td>
+	<td>&lt;title&gt;&lt;/title&gt;</td>
+	<td></td>
+	<td>Titel eines HTML-Dokuments<br />Dokumenttitel.</td>
+	<td>invisible</td>
+	<td>Titel eines HTML-Dokuments</td>
+	</tr>
+	<tr>
+	<td>div</td>
+	<td>&lt;div&gt;&lt;/div&gt;</td>
+	<td></td>
+	<td>Allgemeiner Bereich<br />Generischer Container.</td>
+	<td>block</td>
+	<td>Allgemeiner Bereich</td>
+	</tr>
+	<tr>
+	<td>col</td>
+	<td>&lt;col /&gt;</td>
+	<td class="allowed"></td>
+	<td>Tabellenspalte<br />Spalte.</td>
+	<td>table</td>
+	<td>Tabellenspalte</td>
+	</tr>
+	<tr>
+	<td>ul</td>
+	<td>&lt;ul&gt;&lt;/ul&gt;</td>
+	<td></td>
+	<td>Unsortierte Liste (Aufzählungsliste)<br />Ungeordnete Liste.</td>
+	<td>block</td>
+	<td>Unsortierte Liste (Aufzählungsliste)</td>
+	</tr>
+	</tbody>
+	</table>
+	</body>
 </html>
